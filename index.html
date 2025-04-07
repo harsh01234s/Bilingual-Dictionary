@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilingual Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bilingual Dictionary (Hindi-English)</h1>
+
+        <!-- Add Word Section -->
+        <div class="add-word">
+            <h2>Add a Word</h2>
+            <input type="text" id="word" placeholder="Enter a word (Hindi or English)">
+            <textarea id="meaning" placeholder="Enter meanings (comma separated)"></textarea>
+            <input type="text" id="example" placeholder="Enter an example sentence">
+            <input type="text" id="pronunciation" placeholder="Enter pronunciation (optional)">
+            <button onclick="addWord()">Add Word</button>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-word">
+            <h2>Search for a Word</h2>
+            <input type="text" id="search" placeholder="Search..." onkeyup="searchWord()">
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
